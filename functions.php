@@ -58,12 +58,12 @@ add_filter('mce_buttons_2', 'my_mce_buttons_2');
 function my_mce_before_init_insert_formats( $init_array ) {  
 	// Define the style_formats array
 	$style_formats = array(  
-		// Each array child is a format with it's own settings
+		// Each array child is a format with its own settings
 		array(  
 			'title' => 'Button',  
 			'block' => 'div',  
 			'classes' => 'cf-single-button',
-			'wrapper' => true,
+			'wrapper' => false,
 			
 		),  
 	);  
@@ -75,23 +75,6 @@ function my_mce_before_init_insert_formats( $init_array ) {
 } 
 // Attach callback to 'tiny_mce_before_init' 
 add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );  
-
-function create_post_type() {
-  register_post_type( 'cf-event_information',
-    array(
-      'labels' => array(
-        'name' => __( 'Details' ), //Top of page when in post type
-        'singular_name' => __( 'Event Information' ), //per post
-		'menu_name' => __('Event Information'), //Shows up on side menu
-		'all_items' => __('Event Details'), //On side menu as name of all items
-	  ),
-      'public' => true,
-	  'menu_position' => 4,
-      'has_archive' => true,
-    )
-  );
-}
-add_action( 'init', 'create_post_type' );
 
 
 // Integrate Advanced Custom Fields

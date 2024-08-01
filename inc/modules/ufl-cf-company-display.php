@@ -1,7 +1,10 @@
 <div class="container content-wrap">
 	<div class="row">
 		<div class="col-sm-12 codisplay">
-			<h2><?php the_sub_field( 'headline' ); ?></h2>			
+			<h2><?php the_sub_field( 'headline' ); ?></h2>
+			<?php if(get_sub_field( 'map_link' )) {
+				echo '<h4 style="text-align: center;"><a href="' . get_sub_field( 'map_link' ) . '" target="_blank" rel="noopener">View a map of the event</a></h4>';
+			 } ?>					
 			<div class="controls">
 				<?php while( have_rows( 'buttons' ) ) : the_row(); ?>
 					<?php 
@@ -12,7 +15,7 @@
 				<?php endwhile // have_rows ?>
 				<button type="button" data-filter="all">All</button>
 			</div>
-			<?php echo do_shortcode('[COMPANY_DISPLAY type="post" posts_per_page="50" order="ASC" orderby="title" category_name="current"]'); ?>
+			<?php echo do_shortcode('[COMPANY_DISPLAY type="post" posts_per_page="100" order="ASC" orderby="title" category_name="current"]'); ?>
 		</div>
 	</div>
 </div>

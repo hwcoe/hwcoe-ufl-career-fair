@@ -125,7 +125,7 @@
                     "sub_fields": [
                         {
                             "key": "field_5cace28a93aa5",
-                            "label": "Headline",
+                            "label": "Section Headline",
                             "name": "headline",
                             "type": "text",
                             "instructions": "",
@@ -243,7 +243,7 @@
                             },
                             "collapsed": "",
                             "min": 3,
-                            "max": 0,
+                            "max": 3,
                             "layout": "row",
                             "button_label": "Add item",
                             "sub_fields": [
@@ -287,6 +287,132 @@
                                 },
                                 {
                                     "key": "field_5ca3baad0cd25",
+                                    "label": "Content",
+                                    "name": "content",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": "br"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5d445e61a22fd": {
+                    "key": "layout_5d445e61a22fd",
+                    "name": "long_timeline_display",
+                    "label": "Long Timeline Display",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d445e61a22fe",
+                            "label": "Class",
+                            "name": "class",
+                            "type": "text",
+                            "instructions": "Add a class here for specific page styling. Leave blank if no class is needed.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5d445e61a22ff",
+                            "label": "Section Headline",
+                            "name": "section_headline",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5d445e61a2300",
+                            "label": "Timeline Display",
+                            "name": "timeline_display",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 3,
+                            "max": 0,
+                            "layout": "row",
+                            "button_label": "Add item",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5d445e61a2301",
+                                    "label": "Headline",
+                                    "name": "headline",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5d445e61a2302",
+                                    "label": "Date",
+                                    "name": "date",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "visual",
+                                    "toolbar": "full",
+                                    "media_upload": 0,
+                                    "delay": 0
+                                },
+                                {
+                                    "key": "field_5d445e61a2303",
                                     "label": "Content",
                                     "name": "content",
                                     "type": "textarea",
@@ -430,7 +556,7 @@
                         },
                         {
                             "key": "field_5caf36167e01a",
-                            "label": "Headline",
+                            "label": "Section Headline",
                             "name": "headline",
                             "type": "text",
                             "instructions": "",
@@ -534,6 +660,22 @@
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
+                        },
+                        {
+                            "key": "field_5e286a8c5a482",
+                            "label": "Map Link",
+                            "name": "map_link",
+                            "type": "url",
+                            "instructions": "Place a link to the map here.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
                         },
                         {
                             "key": "field_5cc6fd31fd487",
@@ -2249,4 +2391,4 @@
     "hide_on_screen": "",
     "active": true,
     "description": ""
-}   
+}
